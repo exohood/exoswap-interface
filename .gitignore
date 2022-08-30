@@ -1,40 +1,46 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# generated contract types
-/src/types/v3
-/src/abis/types
-/src/locales/**/*.js
-/src/locales/**/en-US.po
-/src/locales/**/pseudo.po
-/src/state/data/generated.ts
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
 # dependencies
 /node_modules
 
-# testing
-/coverage
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
 
-# builds
-/build
-/dts
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
 # misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-/.netlify
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-notes.txt
-.idea/
-
-package-lock.json
-
-cypress/videos
-cypress/screenshots
+Thumbs.db
