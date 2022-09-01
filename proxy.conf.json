@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "http://exoswap.exohood.org",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/rest-auth": {
+    "target": "http://exoswap.exohood.org",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
